@@ -1,0 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './App.css'
+import Home from './components/Home'
+// import GithubRepoDetailsPage from './components/GithubRepoDetailsPage/GithubRepoDetailsPage'
+import OwnerListRepo from './components/OwnerListRepo/OwnerListRepo'
+import GithubRepoDetailsPage2 from './components/GithubRepoDetailsPage/GithubRepoDetailsPage2'
+import NavigationBar from './components/NavigationBar/NavigationBar'
+
+function App() {
+
+  return (
+    <>
+      <BrowserRouter>
+        <NavigationBar showRepoName={true} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/repo/:owner/:repo' element={<GithubRepoDetailsPage2 />} />
+          <Route path='owner/:owner' element={<OwnerListRepo />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
+
+export default App

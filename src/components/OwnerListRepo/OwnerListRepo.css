@@ -1,0 +1,26 @@
+/* src/OwnerListRepo.css */
+
+.table {
+  border-radius: 10rem;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.text-dark {
+  color: #212529 !important;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
