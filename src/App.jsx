@@ -3,7 +3,7 @@ import './App.css'
 import Home from './components/Home'
 import OwnerListRepo from './components/OwnerListRepo/OwnerListRepo'
 import GithubRepoDetailsPage2 from './components/GithubRepoDetailsPage/GithubRepoDetailsPage2'
-import NavigationBar from './components/NavigationBar/NavigationBar'
+
 
 function App() {
 
