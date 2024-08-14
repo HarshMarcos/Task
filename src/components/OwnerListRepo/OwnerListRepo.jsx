@@ -1,9 +1,8 @@
-// src/OwnerListRepo.js
 import React, { useEffect, useState } from 'react';
 import { Container, Table, Spinner, Alert } from 'react-bootstrap';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import './OwnerListRepo.css'; // Import custom CSS for additional styling
+import './OwnerListRepo.css';
 
 const OwnerListRepo = () => {
     const { owner } = useParams();
