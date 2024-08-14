@@ -1,11 +1,12 @@
 import React from 'react'
 import GithubRepos from './GithubRepoPage/GithubRepos'
-// import NavigationBar from './NavigationBar'
+import NavigationBar from './NavigationBar/NavigationBar'
+
 
 const Home = () => {
     return (
         <>
-            {/* <NavigationBar showRepoName={true} /> */}
+            <NavigationBar />
             <GithubRepos />
         </>
     )

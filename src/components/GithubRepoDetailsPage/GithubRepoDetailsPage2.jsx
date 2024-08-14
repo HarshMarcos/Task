@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Container, Row, Col, Card, Badge, Spinner, ListGroup, Button } from 'react-bootstrap';
 import './GithubRepoDetailsPage.css';
 import FavoriteButton from '../FavoriteButton'
@@ -46,6 +46,7 @@ const GithubRepoDetailsPage2 = () => {
 
     return (
         <Container className="mt-5">
+            <h2>Repository Details</h2>
             <Row className="justify-content-center">
                 <Col md={8}>
                     <Card className="shadow-lg border-0">
@@ -67,7 +68,8 @@ const GithubRepoDetailsPage2 = () => {
                                 <Col md={4} className="text-center">
                                     <Card.Img src={repoDetails.owner.avatar_url} alt={repoDetails.owner.login} roundedcircle="true" className="mb-3" />
                                     <Card.Text>
-                                        <strong>Owner:</strong> {repoDetails.owner.login}
+                                        <strong>Owner: </strong>
+                                        <Link to={`/owner/${repoDetails.owner.login}`}>{repoDetails.owner.login}</Link>
                                     </Card.Text>
                                 </Col>
                                 <Col md={8}>

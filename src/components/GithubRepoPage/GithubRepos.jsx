@@ -16,7 +16,7 @@ const GithubRepos = () => {
     }, [])
     return (
         <Container className='container'>
-            <h3>Repositories : </h3>
+            <h3>All Repositories</h3>
             {githubRepositories && githubRepositories.length > 0 ? (
                 githubRepositories.map((repo) => (
                     <Stack gap={4} key={repo.id}>
